@@ -625,4 +625,13 @@ Return (FILE TYPE START-LINE END-LINE START-COL END-COL)."
                     "  epsilon\n    tau\n")
                    "  (* epsilon\n       tau *)\n"))))
 
+(ert-deftest tuareg-exp-1 ()
+  (should tuareg-faces-inherit-p))
+
+(ert-deftest tuareg-exp-2 ()
+  (should (fboundp 'prettify-symbols-mode)))
+
+(ert-deftest tuareg-exp-3 ()
+  (should (fboundp 'char-displayable-p)))
+
 (provide 'tuareg-tests)
